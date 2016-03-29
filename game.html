@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>15 puzzle</title>
+  <link type="text/css" href="styles/main.css" rel="Stylesheet" />
+</head>
+<body>
+  <p class="descr">(Clicca sulle caselle / frecce / WASD)</p>
+  <p class="descr">(Click on cells / arrows / WASD)</p>
+  <div id="main"></div>
+  
+  <div id="log"></div>
+  <div id="data">
+    <div class="outer">
+      <div class="title">Moves</div>
+      <div id="num-moves" class="inner">x</div>
+    </div>
+    <br />
+    <div class="outer">
+      <div class="title">Stopwatch</div>
+      <div id="stopwatch" class="inner">00:00:00.0</div>
+    </div>
+    <p style="font-size:.7em; margin-bottom:0;">Andrea Tomasoni</p>
+  </div>
+  <div id="restart">
+    <div class="inner"><div id="reBtn" class="my-btn" onselectstart="return false;" onclick="location.reload();">Restart</div></div>
+  </div>
+  
+  <script src="scripts/jquery-2.1.1.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
